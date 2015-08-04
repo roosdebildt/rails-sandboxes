@@ -15,6 +15,7 @@
 <%= render 'comments/form' %>
 
 <p>
+  <!-- line 19 heb ik op Stackoverflow gevonden. -->
   <%= render :partial => "comments/comment", locals: { comment: @comment } %>
   <%= link_to 'Destroy Comment', [comment.article, comment],
                method: :delete,
