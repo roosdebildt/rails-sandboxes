@@ -8,7 +8,6 @@ class CommentsController < ApplicationController
     redirect_to article_path(@article)
   end
 
-  # of is hier iets aan de hand?
   def destroy
     @article = Article.find(params[:article_id])
     @comment = @article.comments.find(params[:id])
