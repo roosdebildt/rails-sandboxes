@@ -1,2 +1,9 @@
 <h1>About</h1>
 <p>"Maud" + "Roos" == "Team Cheesy" > "Proud participants of the Rails Girls Summer of Code 2015".</p>
+<p>These are our last three tweets:</p>
+
+<ul>
+  <% @tweets[0...3].each do |tweet| %>
+    <li> <%= tweet.text %> </li>
+  <% end %>
+</ul>
